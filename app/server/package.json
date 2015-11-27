@@ -1,0 +1,18 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "nothing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "hasan",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "*",
+    "express": "^4.13.3",
+    "mongodb": "^2.0.49",
+    "mongoose": "^4.2.7"
+  }
+}

@@ -1,0 +1,116 @@
+﻿html,
+body {
+  height: 100%;
+
+}
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  margin: 0 auto -82px 0;
+  padding: 0 0 80px 0;
+}
+
+#wrap > .center-container {
+  padding: 50px 0 0 0;
+  margin:0;
+}
+
+
+.center-container {
+    height: 100%;
+    display: table;
+    width: 100%;
+    margin: 0;
+    background-color: #55c8e6;
+}
+.container-search
+{
+    position:relative;
+    margin:5% 0px 0px 20%;
+}
+.container-search ul
+{
+    list-style-type:none;
+    padding:0;
+    margin-top:20px;
+    width:70%;
+}
+.container-search ul li a
+{
+    text-decoration:underline;
+}
+center-container-grey {
+    height: 100%;
+    display: table;
+    width: 100%;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+#footer {
+    height: 80px;
+    background-color: #233140;
+}
+
+#footer > .container {
+  padding-top:5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+#footer  ul{
+        list-style:none;
+        margin:0;
+        text-align: center;
+        margin-left:22%;
+    }
+#footer  ul li {
+            float:left;
+            display:inline;
+            padding:0 5px 0 5px;
+            border-right-style: solid;
+            border-right-color: #78797b;
+            border-right-width: 1px;
+            height: 15px;
+                   
+        }
+
+#footer ul li a
+{
+    font-size:12px;
+    text-decoration:none;
+    color:#78797b
+}
+#footer ul li:last-child 
+{
+     border-right: none; 
+
+}
+
+.inner-addon {
+  position: relative;
+  width:70%;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 24px;
+}
+.right-addon .glyphicon {
+    right: 0px;
+}
+.right-addon input {
+    padding-right: 30px;
+    height: 50px;
+    font-size: 24px;
+}
+.lead {
+    margin-bottom: 10px;
+    margin-right: 1%;
+    border-bottom-style: solid;
+    border-bottom-color: #4b4b4c;
+    border-bottom-width: 2px;
+    text-align: center;
+}

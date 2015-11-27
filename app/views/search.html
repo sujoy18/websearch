@@ -1,0 +1,20 @@
+<div class="container-search">
+    
+        <div ng-show="showSearchBox" class="inner-addon right-addon">
+            <i class="glyphicon glyphicon-search"></i>
+
+            <input type="text" ng-model="searchKeyword.text" class="form-control" ng-keyup="$event.keyCode == 13 && searchSiteData()" placeholder="Search Publishers" />
+        </div>
+    
+    <div ng-show="showSearchList">
+        <ul>
+            <li ng-if="siteList.length != 0" ng-repeat="site in siteList">
+                <a href="#{{site.siteUrl}}">{{site.siteUrl}}</a>
+                <p>{{site.description}}</p>
+            </li>
+            <li ng-if="siteList.length == 0">
+               No results found.
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿<div ng-init="onLoad()" ng-controller="searchBar">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <a class="navbar-brand" href="#">
+                        <span style="color:#000000">Adslot</span><span style="color: #1dbfe8">media</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                       
+                        <li class="page-scroll">
+                            <a ng-hide="showSearchIcon" ng-click="clearSearch()" class="glyphicon glyphicon-remove" href="#"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a ng-show="showSearchIcon" ng-click="searchCustomer()" class="glyphicon glyphicon-search" href="#"></a>
+                           
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+           
+        </nav>
+
+    </div>
+</div>

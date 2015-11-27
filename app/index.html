@@ -1,0 +1,43 @@
+
+<html ng-app="searchModule">
+<head>
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="wrap" >
+        <ng-include src="'views/searchBar.html'"></ng-include>
+      
+        <div ng-class="searchClass" ng-init="onLoad()" ng-controller="searchController">
+
+           <ng-include src="'views/search.html'"></ng-include>
+           
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="lead"><span style="color:#fff">Adslot</span><span style ="color: #1dbfe8">media</span></p>
+           <ul>
+               <li> <a href="#">&copy;2012 Adslot</a> </li>
+               <li><a href="#">Adslot Publisher</a> </li>
+               <li><a href="#">Adslot Create</a></li>
+               <li><a href="#">Terms</a></li>
+               <li ><a href="#">Privecy Policy</a></li>
+               <li><a href="#">Payment Policy</a></li>
+           </ul>
+        </div>
+     
+    </div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/linq.min.js"></script>
+    <script src="app.js"></script>
+    <script src="model/siteModel.js"></script>
+    <script src="controller/search.js"></script>
+    <script src="controller/searchBar.js"></script>
+</body>
+</html>
