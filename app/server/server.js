@@ -4,6 +4,7 @@ var mongodb = require("mongoose");
 var db=require("../config/db.js");
 mongodb.connect(db.url);
 var db = mongodb.connection;
+
 // Add headers
 cors = require('cors')
 app.use(cors());
@@ -137,14 +138,12 @@ var categories = [
 
 ];
 
-
+var router = require('/routes.js')(app);
 app.listen(3000,function(){
 	console.log('Server running at port 3000');
 });
 
-app.get('/search',function(req, res){
-   return res.json(sites)
-})
+
 
 
 

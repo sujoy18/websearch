@@ -1,5 +1,5 @@
-var sites = require('./model/site')
-
+var sites = require('./model/site.js')
+var category = require('./model/categories.js')
 module.exports = function (app){
 	app.get('/search',function(req, res){
 		sites.find(function(err,result){
@@ -11,6 +11,28 @@ module.exports = function (app){
        
    })
 	app.post('/addNews',function(req,res){
-		
+		sites.Create({
+				siteName:req.body.siteName,
+				siteUrl:req.body.siteUrl,
+				description:req.body.description,
+				categoryIds:req.body.categoryIds
+		},function(err, data){
+				if(err)
+					return res.send(err);
+				return res.json(data);
+		});
+	})
+
+	app.post('/addCategory',function(req,res){
+			category.Create({
+				id:req.body.id,
+				description:req.body.description
+
+			},function(err,data){
+				if(err){
+					return res.send(err);
+				}
+				return res.json(data);
+			})
 	})
 }
