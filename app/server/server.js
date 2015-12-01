@@ -138,7 +138,7 @@ var categories = [
 
 ];
 
-var router = require('/routes.js')(app);
+var router = require('./routes.js')(app);
 app.listen(3000,function(){
 	console.log('Server running at port 3000');
 });

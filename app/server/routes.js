@@ -1,5 +1,5 @@
-var sites = require('./model/site.js')
-var category = require('./model/categories.js')
+var sites = require('../model/siteModel.js')
+var category = require('../model/categories.js')
 module.exports = function (app){
 	app.get('/search',function(req, res){
 		sites.find(function(err,result){
