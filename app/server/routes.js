@@ -11,7 +11,7 @@ module.exports = function (app){
        
    })
 	app.post('/addNews',function(req,res){
-		sites.Create({
+		sites.create({
 				siteName:req.body.siteName,
 				siteUrl:req.body.siteUrl,
 				description:req.body.description,
@@ -24,7 +24,7 @@ module.exports = function (app){
 	})
 
 	app.post('/addCategory',function(req,res){
-			category.Create({
+			category.create({
 				id:req.body.id,
 				description:req.body.description
 
