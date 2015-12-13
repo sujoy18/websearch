@@ -24,6 +24,7 @@ module.exports = function (app){
 	})
 
 	app.post('/addCategory',function(req,res){
+		
 			category.create({
 				id:req.body.id,
 				description:req.body.description

@@ -1,32 +1,20 @@
-var searchModule = angular.module('searchModule', []);
+var searchModule = angular.module('searchModule', ['ngRoute']);
 
-// searchModule.run(function ($templateCache) {
-//     $templateCache.put('')
-// })
-// searchModule.filter('appendSufix', function () {
+searchModule.config(['$routeProvider',function($routeProvider){
+    $routeProvider.
+      when('/search', {
+        templateUrl: 'views/search.html',
+        controller: 'searchController'
+      }).
+      when('/addCategory', {
+        templateUrl: 'views/addNews.htlm',
+        controller: 'categoryController'
+      }).
+      otherwise({
+        redirectTo: '/search'
+      });
+}])
 
-//     console.log('filter called')
-//     return function (input,format)
-//     {
-      
-//         return input+" AddSlot"
-//     }
-// }
-// )
-
-// searchModule.directive('searchDirective', function () {
-//     return {
-       
-//         templateUrl: 'searchTemplate.html',
-//         restrict: 'E',
-//         scope: { gensiteData:'=siteCollection' },
-//         link: function (scope, element, attr) {
-//             debugger;
-//             console.log(scope.gensiteData);
-//         }
-//     }
-// })
-//an utility function for parse utility
 searchModule.service('addslotUtility',function()
 {
     this.parseUrl = function (url)

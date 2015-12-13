@@ -10,11 +10,12 @@
     <div id="wrap" >
         <ng-include src="'views/searchBar.html'"></ng-include>
       
-        <div ng-class="searchClass" ng-init="onLoad()" ng-controller="searchController">
+    <!--     <div ng-class="searchClass" ng-init="onLoad()" ng-controller="searchController">
 
            <ng-include src="'views/search.html'"></ng-include>
            
-        </div>
+        </div> -->
+       <div ng-view></div>
     </div>
 
     <div id="footer">
@@ -35,6 +36,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/linq.min.js"></script>
+     <script src="js/angular-route.js"></script>
     <script src="app.js"></script>
     <script src="model/siteModel.js"></script>
     <script src="controller/search.js"></script>
